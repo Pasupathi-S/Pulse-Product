@@ -46,7 +46,7 @@ export default function DashboardClient() {
 >
   <ArrowLeft className="h-4 w-4" />
   Back to website
-</Link> <h1 className="text-3xl font-black tracking-tight sm:text-4xl">Good morning, Pasupathi.</h1>
+</Link> <h1 className="text-3xl font-black tracking-tight sm:text-4xl">Good Morning, Pasupathi.</h1>
                   <p className="mt-2 text-sm text-slate-500">Here&apos;s what&apos;s happening with your business today.</p>
                 </div>
 
