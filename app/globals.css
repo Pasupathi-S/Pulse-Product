@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f7faf9;
+  --ink: #0c1713;
+  --muted: #64736d;
+  --line: #e4ebe8;
+  --green: #19b77a;
+  --green-dark: #087b54;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: #b8f1dc;
+  color: #063f2b;
+}
+
+.container-pulse {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.gradient-text {
+  background: linear-gradient(100deg, #087b54 0%, #19b77a 48%, #57d8ad 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(12, 23, 19, .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(12, 23, 19, .045) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.hero-orb {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(25,183,122,.22), rgba(25,183,122,0) 68%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.card {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.82);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, .06);
+}
+
+.section-space {
+  padding-block: 96px;
+}
+
+@media (max-width: 768px) {
+  .section-space {
+    padding-block: 68px;
+  }
+}
+
+.fade-up {
+  animation: fadeUp .7s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pulse {
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9d7d1;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
