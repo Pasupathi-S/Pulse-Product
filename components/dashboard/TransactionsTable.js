@@ -49,21 +49,21 @@ export default function TransactionsTable() {
   };
 
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white">
+    <section className="min-w-0 rounded-2xl border border-slate-200 bg-white">
       <div className="border-b border-slate-200 p-4">
-        <div className="flex flex-col justify-between gap-4 lg:flex-row lg:items-center">
+        <div className="flex min-w-0 flex-col justify-between gap-4 2xl:flex-row 2xl:items-center">
           <div>
             <h3 className="text-xl font-black">Transactions</h3>
             <p className="mt-1 text-sm text-slate-500">Recent customer payments and order activity.</p>
           </div>
 
-          <div className="flex flex-col gap-2 sm:flex-row">
-            <label className="flex items-center gap-2 rounded-xl border border-slate-200 px-3 py-2">
+          <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:flex-wrap">
+            <label className="flex min-w-0 items-center gap-2 rounded-xl border border-slate-200 px-3 py-2">
               <Search className="h-4 w-4 text-slate-400" />
               <input value={search} onChange={(e) => changeFilter(() => setSearch(e.target.value))} placeholder="Search Product..." className="w-full bg-transparent text-sm outline-none sm:w-44" />
             </label>
 
-            <label className="flex items-center gap-2 rounded-xl border border-slate-200 px-3 py-2">
+            <label className="flex min-w-0 items-center gap-2 rounded-xl border border-slate-200 px-3 py-2">
               <SlidersHorizontal className="h-4 w-4 text-slate-400" />
               <select value={status} onChange={(e) => changeFilter(() => setStatus(e.target.value))} className="bg-transparent text-sm outline-none">
                 <option value="all">All status</option>
@@ -73,7 +73,7 @@ export default function TransactionsTable() {
               </select>
             </label>
 
-            <label className="flex items-center gap-2 rounded-xl border border-slate-200 px-3 py-2">
+            <label className="flex min-w-0 items-center gap-2 rounded-xl border border-slate-200 px-3 py-2">
               <ArrowUpDown className="h-4 w-4 text-slate-400" />
               <select value={sort} onChange={(e) => changeFilter(() => setSort(e.target.value))} className="bg-transparent text-sm outline-none">
                 <option value="date-desc">Newest</option>
@@ -102,7 +102,7 @@ export default function TransactionsTable() {
         </div>
       ) : (
         <>
-          <div className="overflow-x-auto">
+          <div className="min-w-0 max-w-full overflow-x-auto overscroll-x-contain">
             <table className="w-full min-w-[720px] text-left text-sm">
               <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-400">
                 <tr>

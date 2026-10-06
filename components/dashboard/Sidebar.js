@@ -11,7 +11,7 @@ export default function Sidebar({ open, onClose }) {
   return (
     <>
       {open && <button onClick={onClose} className="fixed inset-0 z-40 bg-slate-950/40 lg:hidden" aria-label="Close sidebar" />}
-      <aside className={`fixed inset-y-0 left-0 z-50 w-[260px] border-r border-slate-200 bg-white px-4 py-5 transition-transform lg:static lg:z-auto lg:block lg:translate-x-0 ${open ? "translate-x-0" : "-translate-x-full"}`}>
+      <aside className={`fixed inset-y-0 left-0 z-50 w-[200px] border-r border-slate-200 bg-white px-4 py-5 transition-transform lg:static lg:z-auto lg:block lg:translate-x-0 ${open ? "translate-x-0" : "-translate-x-full"}`}>
         <div className="flex items-center justify-between px-2">
           <a href="/" className="flex items-center gap-2 text-xl font-black">
             <span className="grid h-9 w-9 place-items-center rounded-xl bg-slate-950 text-white">P</span>

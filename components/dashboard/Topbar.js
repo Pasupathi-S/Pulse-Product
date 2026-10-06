@@ -19,10 +19,10 @@ export default function Topbar({ onMenu }) {
           </button>
           <div className="ml-2 flex items-center gap-3">
             <div className="hidden text-right sm:block">
-              <p className="text-sm font-bold">Arun</p>
+              <p className="text-sm font-bold">Pasupathi</p>
               <p className="text-xs text-slate-500">Admin</p>
             </div>
-            <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-700 text-sm font-black text-white">A</div>
+            <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-700 text-sm font-black text-white">P</div>
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ export default function DashboardClient() {
 >
   <ArrowLeft className="h-4 w-4" />
   Back to website
-</Link> <h1 className="text-3xl font-black tracking-tight sm:text-4xl">Good morning, Arun.</h1>
+</Link> <h1 className="text-3xl font-black tracking-tight sm:text-4xl">Good morning, Pasupathi.</h1>
                   <p className="mt-2 text-sm text-slate-500">Here&apos;s what&apos;s happening with your business today.</p>
                 </div>
 
@@ -72,7 +72,7 @@ export default function DashboardClient() {
                 <div className="space-y-5">
                   <StatsCards stats={state.data.stats} />
                   <Charts revenue={state.data.revenue} conversion={state.data.conversion} />
-                  <div className="grid gap-4 xl:grid-cols-[1.55fr_.75fr]">
+                  <div className="grid min-w-0 grid-cols-1 gap-4 xl:grid-cols-[minmax(0,1.55fr)_minmax(0,.75fr)]">
                     <TransactionsTable />
                     <Customers />
                   </div>

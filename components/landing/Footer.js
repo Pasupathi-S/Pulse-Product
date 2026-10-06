@@ -32,8 +32,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container-pulse flex flex-col justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
-        <span>© 2026 pulse. Assessment project.</span>
-        <span>Built with Next.js + React</span>
+        <span>© 2026 pulse</span>
       </div>
     </footer>
   );

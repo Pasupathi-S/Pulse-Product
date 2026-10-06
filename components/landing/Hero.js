@@ -44,7 +44,7 @@ export default function Hero() {
               <div className="mb-5 flex items-center justify-between">
                 <div>
                   <p className="text-xs text-slate-400">Overview</p>
-                  <h2 className="mt-1 text-xl font-bold">Good morning, Arun</h2>
+                  <h2 className="mt-1 text-xl font-bold">Good Morning, Pasupathi</h2>
                 </div>
                 <div className="rounded-xl bg-white/10 px-3 py-2 text-xs">Oct 2026</div>
               </div>
